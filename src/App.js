@@ -35,6 +35,7 @@ const App = () => {
     );
   }
 
+  // Wrap side by-side elements so there is always only 1 root element
   return (
     <div>
       <section id="goal-form">
