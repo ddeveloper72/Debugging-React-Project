@@ -13,8 +13,8 @@ const App = () => {
   const addGoalHandler = enteredText => {
     setCourseGoals(prevGoals => {
       const updatedGoals = [...prevGoals];
-      // hard coded id found
-      updatedGoals.unshift({ text: enteredText, id: 'goal1' });
+      // generate unique id for each goal
+      updatedGoals.unshift({ text: enteredText, id: Math.random().toString() });
       return updatedGoals;
     });
   };
