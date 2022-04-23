@@ -13,6 +13,7 @@ const App = () => {
   const addGoalHandler = enteredText => {
     setCourseGoals(prevGoals => {
       const updatedGoals = [...prevGoals];
+      // hard coded id found
       updatedGoals.unshift({ text: enteredText, id: 'goal1' });
       return updatedGoals;
     });
